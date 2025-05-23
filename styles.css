@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0e0e0e;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 15px;
+  padding: 15px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  opacity: 0.8;
+  box-shadow: 0 0 10px #333;
+}
+
+h1 {
+  color: #00d1b2;
+}
+
+a {
+  color: #00afff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.label {
+  font-weight: bold;
+  color: #ccc;
+}
+
+
+#heading {
+  background-color: rgb(156, 77, 241);
+  width: 100%;
+  height: fit-content;
+  padding: 15px;
+  border-radius: 15px;
+  animation: box-glow 6s infinite alternate;
+  font-family: "Press Start 2P", system-ui;
+}
+
+#title {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+
+
+}
+
+#title p {
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  color: #ccc0be;
+  text-shadow: 0 0 5px #636363,
+    0 0 10px #504f4f,
+    0 0 20px #ccc0be,
+    0 0 30px #ccc0be,
+    0 0 40px #ccc0be,
+    0 0 50px #ccc0be;
+  transform: scale(1.5);
+}
+
+#title p span {
+  animation: multicolor-glow 6s infinite alternate;
+  font-size: 22px;
+}
+
+
+#nav {
+  display: inline-block;
+  width: 68%;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 6px;
+}
+
+#nav section a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ccc0be;
+  width: fit-content;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+}
+
+
+#nav section a:hover {
+
+  animation: multicolor-glow 6s infinite alternate;
+}
+
+main {
+  color: #ccc0be;
+  /* text-align: center; */
+  background-image: url('./pngs/bg.jpg');
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 15px;
+  height: fit-content;
+  border-radius: 15px;
+  animation: box-glow 6s infinite alternate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.main {
+  border: 1px solid;
+  padding: 30px;
+  width: 90%;
+  display: flex;
+}
+
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+@keyframes multicolor-glow {
+  0% {
+    text-shadow: 0 0 5px #ff0000,
+      0 0 10px #ff0000,
+      0 0 20px #ff0000,
+      0 0 30px #ff4500,
+      0 0 40px #ff4500,
+      0 0 50px #ff4500,
+      0 0 60px #ff4500;
+    color: #ff00ff;
+
+  }
+
+  33% {
+    text-shadow: 0 0 5px #00ff00,
+      0 0 10px #00ff00,
+      0 0 20px #00ff00,
+      0 0 30px #32cd32,
+      0 0 40px #32cd32,
+      0 0 50px #32cd32,
+      0 0 60px #32cd32;
+    color: #ff0000;
+  }
+
+  66% {
+    text-shadow: 0 0 5px #0000ff,
+      0 0 10px #0000ff,
+      0 0 20px #0000ff,
+      0 0 30px #1e90ff,
+      0 0 40px #1e90ff,
+      0 0 50px #1e90ff,
+      0 0 60px #1e90ff;
+    color: #00ff00;
+  }
+
+  100% {
+    text-shadow: 0 0 5px #ff00ff,
+      0 0 10px #ff00ff,
+      0 0 20px #ff00ff,
+      0 0 30px #ff69b4,
+      0 0 40px #ff69b4,
+      0 0 50px #ff69b4,
+      0 0 60px #ff69b4;
+    color: #0000ff;
+  }
+}
+
+@keyframes box-glow {
+  0% {
+    box-shadow: 0 0 10px green;
+  }
+
+  50% {
+    box-shadow: 0 0 10px red;
+  }
+
+  100% {
+    box-shadow: 0 0 10px blue;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  #heading {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  #title,
+  #nav {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #nav section a {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    font-size: 16px;
+    height: 45px;
+  }
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about img {
+    width: 50% !important;
+    height: auto !important;
+    margin-top: 20px;
+  }
+
+  .container {
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  main {
+    margin: 10px;
+  }
+
+  footer .section {
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  #title,
+  #nav {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #nav section a {
+    font-size: 17px;
+    height: 50px;
+    width: 160px;
+  }
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #about img {
+    width: 40% !important;
+    height: auto !important;
+    margin-top: 20px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  footer .section {
+    padding: 0 15px;
+  }
+}
