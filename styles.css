@@ -311,6 +311,10 @@ main {
     text-align: center;
   }
 
+  #title {
+    margin: 15px auto;
+  }
+
   section {
     flex-wrap: wrap;
     justify-content: center;
