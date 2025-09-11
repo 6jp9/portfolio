@@ -12,6 +12,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
@@ -113,19 +114,35 @@
                 <a href="https://github.com/6jp9" target="_blank">github.com/6jp9</a>
             </div>
         </div>
+<div class="container my-5" id="skills">
+  <h2 class="mb-4 text-center">Skills</h2>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <h5>Languages</h5>
+      <p>Python</p>
+    </div>
+    <div class="col-md-4">
+      <h5>Frameworks</h5>
+      <p>Django REST Framework, Bootstrap</p>
+    </div>
+    <div class="col-md-4">
+      <h5>Databases</h5>
+      <p>DBMS (MySQL, Oracle)</p>
+    </div>
+  </div>
+  <div class="row text-center mt-4">
+    <div class="col-md-6">
+      <h5>Web</h5>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+    <div class="col-md-6">
+  <h5>Tools / Libraries</h5>
+  <p>Git, GitHub, NumPy (basic), Pandas (basic), Matplotlib (basic)</p>
+</div>
 
-        <div class="container" id="skills">
-            <div class="section">
-                <div class="label">Skills:</div>
-                <ul>
-                    <li>Django REST Framework</li>
-                    <li>Database Management System (DBMS)</li>
-                    <li>Python</li>
-                    <li>Web Technologies</li>
-                    <li>Git & GitHub</li>
-                </ul>
-            </div>
-        </div>
+  </div>
+</div>
+
 
         <div class="container" id="projects">
             <div class="section">
@@ -142,6 +159,44 @@
                         Render or Railway.</li>
 
                 </ul>
+                <!-- Simple Bootstrap Carousel -->
+<div id="simpleCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./pngs/Home.png" class="d-block w-100" alt="Home 1">
+    </div>
+    <div class="carousel-item">
+      <img src="./pngs/Signup.png" class="d-block w-100" alt="signup 2">
+    </div>
+    <div class="carousel-item">
+      <img src="./pngs/otpverify.png" class="d-block w-100" alt="otp verify 3">
+    </div>
+    <div class="carousel-item">
+      <img src="./pngs/login.png" class="d-block w-100" alt="login 4">
+    </div>
+    <div class="carousel-item">
+      <img src="./pngs/test_menu.png" class="d-block w-100" alt="test menu 5">
+    </div>
+    <div class="carousel-item">
+      <img src="./pngs/test.png" class="d-block w-100" alt="test 6">
+    </div>
+    <div class="carousel-item">
+      <img src="./pngs/result.png" class="d-block w-100" alt="result 7">
+    </div>
+    <div class="carousel-item">
+      <img src="./pngs/logout.png" class="d-block w-100" alt="logout 8">
+    </div>
+  </div>
+
+  <!-- Prev / Next buttons -->
+  <button class="carousel-control-prev" type="button" style=" background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0));" data-bs-target="#simpleCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" style=" background: linear-gradient(to left, rgba(0,0,0,0.9), rgba(0,0,0,0));" data-bs-target="#simpleCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
             </div>
         </div>
     </main>
