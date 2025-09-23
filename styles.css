@@ -51,11 +51,10 @@ a:hover {
 
 
 #heading {
-  background-color: rgb(156, 77, 241);
+  background-color: rgb(77, 49, 107);
   width: 100%;
   height: fit-content;
   padding: 15px;
-  border-radius: 15px;
   animation: box-glow 6s infinite alternate;
   font-family: "Press Start 2P", system-ui;
 }
@@ -197,15 +196,15 @@ main {
 
 @keyframes box-glow {
   0% {
-    box-shadow: 0 0 10px green;
+    box-shadow: 0 0 10px 5px green;
   }
 
   50% {
-    box-shadow: 0 0 10px red;
+    box-shadow: 0 0 10px 5px red;
   }
 
   100% {
-    box-shadow: 0 0 10px blue;
+    box-shadow: 0 0 10px 5px blue;
   }
 }
 
